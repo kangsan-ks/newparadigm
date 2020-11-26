@@ -1,0 +1,15 @@
+@charset "UTF8";
+
+.mo_block{display: none;}
+.mo_none{display: block;}
+.inline{display: inline;}
+.inner{width: 1280px; margin: 0 auto;}
+img{}
+body{font-size: 16px; color: #3d3d3d;}
+#container{position: relative; width: 100%; overflow-x: hidden;}
+.transXY{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 1;}
+.transX{position: absolute; left: 50%; transform: translateX(-50%);}
+.transY{position: absolute; top: 50%; transform: translateY(-50%);}
+
+table{width: 100%;}
+.blind {position: absolute !important; top:auto;left:-10000px; width:1px; height:1px; overflow:hidden;}
