@@ -23,7 +23,7 @@ table{width: 100%;}
 
 #header{position: absolute; top: 0; left: 0; width: 100vw; background-color: rgba(0, 138, 159, 0.8); font-family: 'Noto Sans KR', sans-serif;}
 #header .flex_box{align-items: center; height: 100px; margin-left: 180px;}
-#header .nav_wrap{margin-right: auto; margin-left: 320px;}
+#header .nav_wrap{margin-right: auto; margin-left: 220px;}
 #header .nav_box{display: inline-flex;}
 #header .nav_box .nav_list{position: relative;}
 #header .nav_box .nav_list > a{font-size: 20px; font-weight: 500; color: #fff; margin-right: 75px;}

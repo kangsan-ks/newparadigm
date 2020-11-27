@@ -21,11 +21,11 @@
                 <div class="info_box">
                     <div>
                         <p>Silicon Valley</p>
-                        <p>12/10 15:00-19:30</p>
+                        <p>12/8 15:00-19:30</p>
                     </div>
                     <div>
-                        <p>Jeju Island</p>
-                        <p>12/1 08:00-12:30</p>
+                        <p>Daejeon</p>
+                        <p>12/9 08:00-12:30</p>
                     </div>
                 </div>
                 <ul>
