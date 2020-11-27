@@ -2,7 +2,7 @@
 RewriteEngine on
 RewriteBase /
 RewriteCond $1 !^(public)/
-RewriteCond %{HTTP_HOST} ^(www.)?caufineartexhibition.kr [NC]
+RewriteCond %{HTTP_HOST} ^(www.)?svbizforum.gabia.io [NC]
 RewriteRule ^(.*)$ /public/$1 [L]
 </IfModule>
 
@@ -10,6 +10,14 @@ RewriteRule ^(.*)$ /public/$1 [L]
 RewriteEngine on
 RewriteBase /
 RewriteCond $1 !^(public)/
-RewriteCond %{HTTP_HOST} ^(www.)?cau2020.gabia.io [NC]
+RewriteCond %{HTTP_HOST} ^(www.)?svbizforum.org [NC]
+RewriteRule ^(.*)$ /public/$1 [L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+RewriteCond $1 !^(public)/
+RewriteCond %{HTTP_HOST} ^(www.)?svbizforum.com [NC]
 RewriteRule ^(.*)$ /public/$1 [L]
 </IfModule>

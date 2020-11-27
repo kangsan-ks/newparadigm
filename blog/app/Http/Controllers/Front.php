@@ -54,6 +54,16 @@ class Front extends Controller
 
     }
 
+    public function event(Request $request) {
+
+        $return_list = array();
+
+        $url = request()->segment(1);
+
+		return view('sub/'.$url, $return_list);
+
+    }
+
     public function gallery(Request $request) {
 
         $list = DB::table('board')

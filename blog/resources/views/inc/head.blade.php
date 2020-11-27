@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>New Paradigm</title>
@@ -15,7 +15,7 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="/js/sweetalert.js"></script>
         <script src="/js/swiper.min.js"></script>
-        <script src="/js/index.js"></script>
+        <script type="text/javascript" src="/js/index.js" charset="utf-8"></script>
         <!-- 네이버 웹마스터 도구 -->
         <link rel="canonical" href="">
         <meta name="description" content="">

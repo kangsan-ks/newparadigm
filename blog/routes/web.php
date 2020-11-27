@@ -16,12 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'Front@main');
 
 Route::get('/about', 'Front@about');
-Route::get('/gallery', 'Front@gallery');
-Route::get('/gallery_view', 'Front@gallery_view');
-Route::get('/notice', 'Front@notice');
-Route::get('/notice_view', 'Front@notice_view');
-Route::get('/about_list', 'Front@about_list');
-Route::get('/about_view', 'Front@about_view');
+Route::get('/event01', 'Front@event');
+Route::get('/event02', 'Front@event');
+Route::get('/event03', 'Front@event');
+Route::get('/event04', 'Front@event');
 
 Route::get('/as_admin/login', 'Back@as_login');
 Route::post('/as_admin/login_action', 'Back@as_login_action');
