@@ -3,11 +3,11 @@
 <div class="con_main">
     <form action="">
         @if(request()->segment(2) == 'gallery')
-		<div class="select_outer">
+		{{-- <div class="select_outer">
 			<a href="/as_admin/gallery/list?year=2020">2020</a>
 			<a href="/as_admin/gallery/list?year=2021">2021</a>
 			<a href="/as_admin/gallery/list?year=2022">2022</a>
-		</div>
+		</div> --}}
         <table>
             <colgroup>
                 <col width="100">
@@ -32,7 +32,7 @@
             <tbody>
                 @if ($totalCount == 0)
                     <tr>
-                        <td colspan="4">게시글이 없습니다.</td>
+                        <td colspan="7">게시글이 없습니다.</td>
                     </tr>
                 @else
                     @foreach ($data as $data)
@@ -54,7 +54,7 @@
                 @endif
             </tbody>
         </table>
-        @elseif(request()->segment(2) == 'notice' || request()->segment(2) == 'about')
+        @elseif(request()->segment(2) == 'notice' || request()->segment(2) == 'connect')
         <table>
             <colgroup>
                 <col width="100">

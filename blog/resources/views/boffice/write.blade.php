@@ -22,23 +22,7 @@
                     </div>
                 </div>
             </div>
-			@if(request()->segment(2) == 'gallery')
-			<div class="write_line">
-                <div class="all_line">
-                    <div class="line_title">
-                        연도선택
-                    </div>
-                    <div class="line_content">
-					<select name="category">
-						<option value="2020"@if($data->category == '2020') selected @endif>2020</option>
-						<option value="2021"@if($data->category == '2021') selected @endif>2021</option>
-						<option value="2022"@if($data->category == '2022') selected @endif>2022</option>
-					</select>
-                    </div>
-                </div>
-            </div>
-			@endif
-            @if(request()->segment(2) != 'slide')
+            @if(request()->segment(2) != 'slide' && request()->segment(2) != 'connect')
             <div class="write_line">
                 <div class="all_line">
                     <div class="line_title" style="vertical-align: top;">
@@ -46,6 +30,38 @@
                     </div>
                     <div class="line_content">
                     <textarea id="editor" name="contents" cols="60" rows="10" style="">{!! $data->contents !!}</textarea>
+                    </div>
+                </div>
+            </div>
+            @endif
+            @if(request()->segment(2) == 'connect')
+            <div class="write_line">
+                <div class="all_line">
+                    <div class="line_title">
+                        회사명
+                    </div>
+                    <div class="line_content">
+                        <input type="text" value="{{ $data->company }}" readonly />
+                    </div>
+                </div>
+            </div>
+            <div class="write_line">
+                <div class="all_line">
+                    <div class="line_title">
+                        이메일
+                    </div>
+                    <div class="line_content">
+                        <input type="text" value="{{ $data->email }}" readonly />
+                    </div>
+                </div>
+            </div>
+            <div class="write_line">
+                <div class="all_line">
+                    <div class="line_title">
+                        연락처
+                    </div>
+                    <div class="line_content">
+                        <input type="text" value="{{ $data->contact_number }}" readonly />
                     </div>
                 </div>
             </div>
@@ -81,7 +97,6 @@
                         </div>
                         <div class="line_content">
                             <input type="file" name="writer_file2[]" /> <span class="set">사이즈 : [1:1 비율 ex) 500x500]</span>
-                            <span style="cursor: pointer" class="add_file2">이미지 추가 +</span>
                         </div>
                     </div>
                 </div>
@@ -113,8 +128,10 @@
                 </div>
             </div>
             <div class="submit_box" style="text-align:center;margin-top:10px;">
+                @if (request()->segment(2) != 'connect')
                 <input type="submit" value="등록">
-                <input type="reset" value="취소" onclick="history.go(-1);">
+                @endif
+                <input type="reset" value="뒤로가기" onclick="history.go(-1);">
             </div>
         </div>
         @else
@@ -217,34 +234,46 @@
                     </div>
                 </div>
             </div>
-			@if(request()->segment(2) == 'gallery')
-			<div class="write_line">
-                <div class="all_line">
-                    <div class="line_title">
-                        연도선택
-                    </div>
-                    <div class="line_content">
-					<select name="category">
-						<option value="2020">2020</option>
-						<option value="2021">2021</option>
-						<option value="2022">2022</option>
-					</select>
-                    </div>
-                </div>
-            </div>
-			@endif
-            @if(request()->segment(2) != 'slide')
+            @if(request()->segment(2) != 'slide' && request()->segment(2) != 'connect')
             <div class="write_line">
                 <div class="all_line ">
                     <div class="line_title" style="vertical-align: top;">
-                        @if(request()->segment(2) == 'gallery')
-                        작품설명
-                        @else
                         내용
-                        @endif
                     </div>
                     <div class="line_content">
                     <textarea id="editor" name="contents" cols="60" rows="10" style=""></textarea>
+                    </div>
+                </div>
+            </div>
+            @endif
+            @if(request()->segment(2) == 'connect')
+            <div class="write_line">
+                <div class="all_line">
+                    <div class="line_title">
+                        회사명
+                    </div>
+                    <div class="line_content">
+                        <input type="text" value="" readonly />
+                    </div>
+                </div>
+            </div>
+            <div class="write_line">
+                <div class="all_line">
+                    <div class="line_title">
+                        이메일
+                    </div>
+                    <div class="line_content">
+                        <input type="text" value="" readonly />
+                    </div>
+                </div>
+            </div>
+            <div class="write_line">
+                <div class="all_line">
+                    <div class="line_title">
+                        연락처
+                    </div>
+                    <div class="line_content">
+                        <input type="text" value="" readonly />
                     </div>
                 </div>
             </div>
@@ -280,7 +309,6 @@
                         </div>
                         <div class="line_content">
                             <input type="file" name="writer_file2[]" /> <span class="set">사이즈 : [1:1 비율 ex) 500x500]</span>
-                            <span style="cursor: pointer" class="add_file2">이미지 추가 +</span>
                         </div>
                     </div>
                 </div>

@@ -86,25 +86,23 @@ class Front extends Controller
 
     }
 
-    public function gallery(Request $request) {
+    public function archive01(Request $request) {
 
         $list = DB::table('board')
                     ->select(DB::raw('*, (SELECT real_file_name FROM file_list WHERE parent_idx = board.idx LIMIT 1) AS real_file_name, (SELECT name FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_name, (SELECT name_en FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_name_en, (SELECT email FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_email'))
-                    ->where('category', $request->year)
                     ->where('board_type', 'gallery')
                     ->orderBy('prino', 'desc')
                     ->get();
 
 		$list_cnt = DB::table('board')
                     ->select(DB::raw('*, (SELECT real_file_name FROM file_list WHERE parent_idx = board.idx LIMIT 1) AS real_file_name, (SELECT name FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_name, (SELECT name_en FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_name_en, (SELECT email FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_email'))
-                    ->where('category', $request->year)
 					->where('board_type', 'gallery')
                     ->get()->count();
 
         $return_list["data"] = $list;
 		$return_list["list_cnt"] = $list_cnt;
 
-		return view('sub/gallery', $return_list);
+		return view('sub/archive01', $return_list);
 
     }
 
@@ -322,16 +320,30 @@ class Front extends Controller
 
     }
 
-    public function about_view(Request $request) {
+    public function connect(Request $request) {
 
-        $list = DB::table('board')
-                    ->select(DB::raw('*'))
-                    ->where('idx', $request->idx)
-                    ->first();
+		return view('sub/connect');
 
-        $return_list["data"] = $list;
+    }
 
-		return view('sub/about_view', $return_list);
+    public function connect_action(Request $request) {
+
+		DB::table('board')->insert(
+            [
+                'subject' => $request->subject,
+                'company' => $request->company,
+                'email' => $request->email,
+                'writer' => $request->writer,
+                'contact_number' => $request->contact_number,
+                'ip_addr' => request()->ip(),
+                'board_type' => $request->board_type,
+                'reg_date' => \Carbon\Carbon::now(),
+            ]
+        );
+
+        echo '<script>alert("접수가 완료됐습니다. 감사합니다.");</script>';
+
+        return view('/');
 
     }
 

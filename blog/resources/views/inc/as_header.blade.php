@@ -24,7 +24,7 @@
             <div class="nav_space"></div>
             <div id="nav">
                 <div class="logo">
-                    <a href="/as_admin/slider/list">
+                    <a href="/as_admin/connect/list">
                         <img src="/img/logo.png" alt="로고" width="100%">
                     </a>
                 </div>
@@ -33,17 +33,17 @@
                 </div>
                 <div class="nav_con">
                     @if (session('user_id') == 'admin')
-                    <div class="na_title nav_img"><i class="fas fa-desktop"></i>메인페이지 설정</div>
+                    {{-- <div class="na_title nav_img"><i class="fas fa-desktop"></i>메인페이지 설정</div>
                     <div class="na_title dep2">
                         <div class="nav_sub"><a href="/as_admin/slide/list">메인 슬라이드</a></div>
-                        {{-- <div class="nav_sub"><a href="/as_admin/popup/list">팝업</a></div> --}}
-                    </div>
+                        <div class="nav_sub"><a href="/as_admin/popup/list">팝업</a></div>
+                    </div> --}}
                     <div class="na_title nav_img"><i class="fas fa-tasks"></i>사이트 관리</div>
                     <div class="na_title dep2">
-                        <div class="nav_sub"><a href="/as_admin/notice/list">공지사항</a></div>
-                        <div class="nav_sub"><a href="/as_admin/about/list">일정 게시판</a></div>
+                        <div class="nav_sub"><a href="/as_admin/connect/list">Connect with</a></div>
+                        {{-- <div class="nav_sub"><a href="/as_admin/about/list">일정 게시판</a></div> --}}
                         <div class="nav_sub"><a href="/as_admin/gallery/list">갤러리</a></div>
-                        <div class="nav_sub"><a href="/as_admin/member/list">계정 관리</a></div>
+                        {{-- <div class="nav_sub"><a href="/as_admin/member/list">계정 관리</a></div> --}}
                     </div>
                     @else
                     <div class="na_title nav_img"><i class="fas fa-tasks"></i>사이트 관리</div>
@@ -86,8 +86,8 @@
                     <div class="title_nav">
 					@if(request()->segment(2) == 'gallery')
 					갤러리
-                    @elseif(request()->segment(2) == 'notice')
-                    공지사항
+                    @elseif(request()->segment(2) == 'connect')
+                    Connect With
                     @elseif(request()->segment(2) == 'member')
                     계정 관리
                     @elseif(request()->segment(2) == 'slide')

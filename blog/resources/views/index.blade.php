@@ -69,7 +69,7 @@
         <div class="inner">
             <ul class="flex_box">
                 <li data-aos="fade-right">
-                    <a href="#none">
+                    <a href="/archive01">
                         <div class="img_box">
                             <img src="/img/main_archive_img01.png" alt="">
                         </div>
@@ -99,23 +99,24 @@
             </div>
             <div class="right">
                 
-                <form method="POST">
+                <form action="connect_action" method="POST">
                     <h3>Connect With Us</h3>
                     {{ csrf_field() }}
+                    <input type="hidden" name="board_type" value="connect">
                     <div class="input_line mt10">
-                        <input type="text" name="" placeholder="Company">
+                        <input type="text" name="company" placeholder="Company" required>
                     </div>
                     <div class="input_line">
-                        <input type="text" name="writer" placeholder="Name">
+                        <input type="text" name="writer" placeholder="Name" required>
                     </div>
                     <div class="input_line">
-                        <input type="text" name="subject" placeholder="Title">
+                        <input type="text" name="subject" placeholder="Title" required>
                     </div>
                     <div class="input_line">
-                        <input type="text" name="email" placeholder="E-mail">
+                        <input type="text" name="email" placeholder="E-mail" required>
                     </div>
                     <div class="input_line">
-                        <input type="text" name="contact_number" placeholder="Phone">
+                        <input type="text" name="contact_number" placeholder="Phone" required>
                     </div>
                     <div class="submit_box">
                         <input type="image" src="/img/submit_btn.png" alt="submit">

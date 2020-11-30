@@ -194,7 +194,7 @@ class Back extends Controller
 				session(['user_id' => $member_infom->user_id]);
 				session(['user_idx' => $member_infom->idx]);
 
-				echo "<script>alert('로그인되었습니다.');location.href='/as_admin/gallery/list';</script>";
+				echo "<script>alert('로그인되었습니다.');location.href='/as_admin/connect/list';</script>";
 
 			} else {
 				echo "<script>alert('비밀번호가 잘못되었습니다.');location.href='/as_admin/login';</script>";

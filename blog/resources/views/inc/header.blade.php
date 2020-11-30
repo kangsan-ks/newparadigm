@@ -33,7 +33,7 @@
                             <a href="#none">Community</a>
                         </li>
                         <li class="nav_list">
-                            <a href="#none">Connect with us</a>
+                            <a href="/connect">Connect with us</a>
                         </li>
                     </ul>
                 </div>
