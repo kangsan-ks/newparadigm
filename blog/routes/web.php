@@ -20,6 +20,7 @@ Route::get('/event01', 'Front@event');
 Route::get('/event02', 'Front@event');
 Route::get('/event03', 'Front@event');
 Route::get('/event04', 'Front@event');
+Route::get('/archive01', 'Front@archive_list');
 
 Route::get('/as_admin/login', 'Back@as_login');
 Route::post('/as_admin/login_action', 'Back@as_login_action');

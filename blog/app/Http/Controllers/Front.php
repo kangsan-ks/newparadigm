@@ -64,6 +64,28 @@ class Front extends Controller
 
     }
 
+    public function archive_list(Request $request) {
+
+        $list = DB::table('board')
+                    ->select(DB::raw('*, (SELECT real_file_name FROM file_list WHERE parent_idx = board.idx LIMIT 1) AS real_file_name, (SELECT name FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_name, (SELECT name_en FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_name_en, (SELECT email FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_email'))
+                    ->where('category', $request->year)
+                    ->where('board_type', 'gallery')
+                    ->orderBy('prino', 'desc')
+                    ->get();
+
+		$list_cnt = DB::table('board')
+                    ->select(DB::raw('*, (SELECT real_file_name FROM file_list WHERE parent_idx = board.idx LIMIT 1) AS real_file_name, (SELECT name FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_name, (SELECT name_en FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_name_en, (SELECT email FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_email'))
+                    ->where('category', $request->year)
+					->where('board_type', 'gallery')
+                    ->get()->count();
+
+        $return_list["data"] = $list;
+		$return_list["list_cnt"] = $list_cnt;
+
+		return view('sub/archive01', $return_list);
+
+    }
+
     public function gallery(Request $request) {
 
         $list = DB::table('board')

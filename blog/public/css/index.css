@@ -130,6 +130,12 @@ table{width: 100%;}
 #sub.event02 .link_list_box li > div.left{background-color: #efefef; border-right: 1px solid #868686; width: 495px;}
 #sub.event02 .link_list_box li > div.right{background-color: #fff; border-left: 0; width: calc(100% - 495px);}
 
+#sub.archive01 .gallery_list_box{flex-wrap: wrap;}
+#sub.archive01 .gallery_list_box .items{border: 1px solid #eaeaea; border-radius: 10px; padding: 20px; margin-bottom: 30px; -webkit-box-shadow: 0px 5px 32px -20px rgba(0,0,0,0.24); -moz-box-shadow: 0px 5px 32px -20px rgba(0,0,0,0.24); box-shadow: 0px 5px 32px -20px rgba(0,0,0,0.24);}
+#sub.archive01 .gallery_list_box .items:hover .img_box img{transform: scale(1.1);}
+#sub.archive01 .gallery_list_box .items .img_box{border: 1px solid #cccccc; border-radius: 10px; overflow: hidden;}
+#sub.archive01 .gallery_list_box .items .img_box img{width: 100%; transition: all 0.5s ease;}
+#sub.archive01 .gallery_list_box .items .text_box p{font-size: 20px; color: #000;padding: 30px 0px 10px;}
 
 #footer{padding: 70px 0; text-align: center; background-color: #f4f4f4; width: 100%;}
 #footer .info{line-height: 30px; margin-top: 10px; font-size: 17px; letter-spacing: -0.5px; color: #848484;}
