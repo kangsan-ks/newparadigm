@@ -237,7 +237,7 @@
                         </div>
                         <div class="right">
                             <p>Welcome Remarks → SVBF Korea/NPI, Dr. KH Moon</p>
-                            <p>환영사 → SVBF Korea/NPI, 문국현 박사</p>
+                            <p>환영사 → SVBF Korea/NPI, 문국현 대표</p>
                         </div>
                     </li>
                     <li data-aos="fade-up">

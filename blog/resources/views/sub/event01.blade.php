@@ -21,6 +21,8 @@
                     with cutting-edge technology and proven track record of solid business in the sector present their cases and share their knowledge 
                     and experiences. Korean panelists will present their cases as well and discuss the technologies presented during the forum, while 
                     taking questions from the audience.<br/><br/>
+
+                    We ask the participants to use to second day to visit the presenters’ websites to use the time to understand them better.<br/><br/>
                     
                     On the third day, we will have companies and panelists to address clean energy, e-mobility and smart cities. Speakers will be the 
                     leaders and pioneers of their fields with practical experiences. We strongly believe that every participant will leave the forum excited 
@@ -53,14 +55,14 @@
                             - DAY <b>1</b><br/>
                             <span>Healthcare</span>
                         </p>
-                        <a href="/event02">Zoom link</a>
+                        <a href="https://us02web.zoom.us/webinar/register/WN_TFmjQLiCRBibRvDICun-Dw" target="_blank">Zoom link</a>
                     </div>
                     <div>
                         <p class="ft_my">
                             - DAY <b>3</b><br/>
                             <span>Sustainability</span>
                         </p>
-                        <a href="/event04">Zoom link</a>
+                        <a href="https://us02web.zoom.us/webinar/register/WN_W_rWWAzsQ4qDwszx1_9vYg" target="_blank">Zoom link</a>
                     </div>
                 </div>
             </div>

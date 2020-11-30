@@ -195,8 +195,8 @@
                             
                         </div>
                         <div class="right">
-                            <p>Wrap-up → Daejeon Wellness Hospital, Dr. Chul Jun Kim</p>
-                            <p>토론 마무리 → 대전 웰니스 병원, 김철준 박사</p>
+                            <p>Wrap-up → Daejeon Wellness Hospital, Medical Chul Jun Kim</p>
+                            <p>토론 마무리 → 대전 웰니스 병원, 김철준 병원장</p>
                         </div>
                     </li>
                     <li data-aos="fade-up">
