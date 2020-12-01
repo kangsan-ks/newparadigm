@@ -20,7 +20,9 @@ Route::get('/event01', 'Front@event');
 Route::get('/event02', 'Front@event');
 Route::get('/event03', 'Front@event');
 Route::get('/event04', 'Front@event');
+Route::get('/event05', 'Front@event');
 Route::get('/archive01', 'Front@archive01');
+Route::get('/archive01_view', 'Front@archive01_view');
 Route::get('/connect', 'Front@connect');
 Route::post('/connect_action', 'Front@connect_action');
 

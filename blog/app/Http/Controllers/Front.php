@@ -106,7 +106,7 @@ class Front extends Controller
 
     }
 
-    public function gallery_view(Request $request) {
+    public function archive01_view(Request $request) {
 
         $list = DB::table('board')
                     ->select(DB::raw('*, (SELECT real_file_name FROM file_list WHERE parent_idx = board.idx LIMIT 1) AS real_file_name, (SELECT name FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_name, (SELECT name_en FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_name_en, (SELECT email FROM admin_member WHERE idx = board.parent_idx LIMIT 1) AS member_email'))
@@ -134,7 +134,7 @@ class Front extends Controller
         $return_list["flag"] = $flag;
         
 
-		return view('sub/gallery_view', $return_list);
+		return view('sub/archive01_view', $return_list);
 
     }
 

@@ -138,6 +138,14 @@ table{width: 100%;}
 #sub.archive01 .gallery_list_box .items .img_box img{width: 100%; transition: all 0.5s ease;}
 #sub.archive01 .gallery_list_box .items .text_box p{font-size: 20px; color: #000;padding: 30px 0px 10px;}
 
+#sub.archive_view .view_title{border-top: 2px solid #777; padding: 5px 15px; border-bottom: 1px solid #ddd;}
+#sub.archive_view .view_title h1{padding-bottom: 5px; color: #5a5a5a;}
+#sub.archive_view .view_title p{color: #aaa;}
+#sub.archive_view .view_content{padding: 15px; border-bottom: 1px solid #ddd;}
+#sub.archive_view .view_content img{width: 100%; padding-bottom: 20px;}
+#sub.archive_view .prev_box{text-align: center;}
+#sub.archive_view .prev_box a{display: inline-block; padding: 10px 40px; color: #fff; background-color: #1154ac; font-size: 20px; margin-top: 30px;}
+
 #sub.connect{background: url('/img/connect_bg.png') no-repeat center; background-size: cover;text-align: center;}
 #sub.connect .connect_form{width: 600px; margin: 50px auto;}
 #sub.connect .connect_form h2{font-size: 40px; margin-bottom: 30px;}

@@ -19,7 +19,7 @@
                                     Virtual Company Visit</a>
                                 <a href="/event04">Day 3 –<br/>
                                     Sustainability</a>
-                                <a href="#none">Speakers</a>
+                                <a href="/event05">Speakers</a>
                             </div>
                         </li>
                         <li class="nav_list">

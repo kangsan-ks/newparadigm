@@ -14,7 +14,7 @@
                 @else
                 <li class="items" data-aos="fade-up" data-aos-delay="400">
                 @endif
-                    <a href="#none">
+                    <a href="archive01_view?idx={{$data->idx}}">
                         <div class="img_box">
                             <img src="/storage/app/images/{{$data->real_file_name}}" alt="아카이브 썸네일">
                         </div>
