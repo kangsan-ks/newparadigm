@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>New Paradigm</title>
+        <title>Silicon Valley Business Forum</title>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="/css/font.css">

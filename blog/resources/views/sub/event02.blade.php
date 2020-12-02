@@ -6,7 +6,8 @@
     <div class="sub_sec">
         <div class="inner ft_nn">
             <div class="top_img_box">
-                <img src="/img/sub_event_img01.png" alt="">
+                <img class="mo_none" src="/img/sub_event_img01.png" alt="">
+                <img class="mo_block" src="/img/m_sub_event_img01.png" alt="">
                 {{-- <div class="day_info_title ft_my">
                     <h3>Day-1 : Virtual Company Visit</h3>
                     <p>DECEMBER 10-11, 2020</p>
@@ -166,8 +167,8 @@
                         </div>
                         <div class="right">
                             
-                            <p>Panel Discussion  → Moderator Daejeon Wellness Hospital, Dr. Chul Jun Kim</p>
-                            <p>패널 토론 → 좌장 : 대전 웰니스 병원, 김철준 박사<br/><br/></p>
+                            <p>Panel Discussion  → Daejeon Wellness Hospital, Medical Director Chul Jun Kim</p>
+                            <p>패널 토론 → 좌장 : 대전 웰니스 병원, 김철준 병원장<br/><br/></p>
                             <p>Panel 1 → E&S Healthcare Inc., CEO Ken Kyoung-Hoon Suh</p>
                             <p>패널 1 → E&S 헬스케어, 서경훈 대표<br/><br/></p>
                             <p>Panel 2 → RevoSketch Inc., CEO Sung Woon Lee </p>
@@ -195,7 +196,7 @@
                             
                         </div>
                         <div class="right">
-                            <p>Wrap-up → Daejeon Wellness Hospital, Medical Chul Jun Kim</p>
+                            <p>Wrap-up → Daejeon Wellness Hospital, Medical Director Chul Jun Kim</p>
                             <p>토론 마무리 → 대전 웰니스 병원, 김철준 병원장</p>
                         </div>
                     </li>

@@ -6,7 +6,8 @@
     <div class="sub_sec">
         <div class="inner ft_nn">
             <div class="top_img_box">
-                <img src="/img/sub_event_img03.png" alt="">
+                <img class="mo_none" src="/img/sub_event_img03.png" alt="">
+                <img class="mo_block" src="/img/m_sub_event_img03.png" alt="">
                 {{-- <div class="day_info_title ft_my">
                     <h3>Day-3 : Sustainability</h3>
                     <p>DECEMBER 10-11, 2020</p>

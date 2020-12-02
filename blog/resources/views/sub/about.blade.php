@@ -21,7 +21,7 @@
                     </div>
                     <div class="text_box">
                         <p class="ft_my">
-                            By providing series of forums and building communities of common interest participated by business leaders, start-up leaders, investors, 
+                            By providing series of forums and building communities of common interest participated by business leaders, start-up leaders, investors, 
                             academic leaders, journalists, opinion leaders and governmental leaders, 
                             SVBF would like to create a place where the participants form a strong 
                             partnership through networks and continue growth and innovation. <br/><br/>

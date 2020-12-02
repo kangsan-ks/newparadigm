@@ -1,7 +1,8 @@
 @include('inc/head')
 <div id="main">
     <div class="main_banner">
-        <img src="/img/main_banner01.png" alt="메인배너">
+        <img class="mo_none" src="/img/main_banner01.png" alt="메인배너">
+        <img class="mo_block" src="/img/m_main_banner01.png" alt="메인배너">
     </div>
     <div class="wwa_box">
         <img src="/img/main_img01.png" alt="">
@@ -14,7 +15,8 @@
                 <li data-aos="fade-up">
                     <a href="/event01">
                         <div class="img_box">
-                            <img src="/img/main_event_img01.png" alt="">
+                            <img class="mo_none" src="/img/main_event_img01.png" alt="">
+                            <img class="mo_block" src="/img/m_main_event_img01.png" alt="">
                         </div>
                         <div class="text_box">
                             <p>Introduction &<br/>Register</p>
@@ -24,7 +26,8 @@
                 <li data-aos="fade-up" data-aos-delay="200">
                     <a href="event02">
                         <div class="img_box">
-                            <img src="/img/main_event_img02.png" alt="">
+                            <img class="mo_none" src="/img/main_event_img02.png" alt="">
+                            <img class="mo_block" src="/img/m_main_event_img02.png" alt="">
                         </div>
                         <div class="text_box">
                             <p>Day1<br/>Healthcare</p>
@@ -34,7 +37,8 @@
                 <li data-aos="fade-up" data-aos-delay="400">
                     <a href="event03">
                         <div class="img_box">
-                            <img src="/img/main_event_img03.png" alt="">
+                            <img class="mo_none" src="/img/main_event_img03.png" alt="">
+                            <img class="mo_block" src="/img/m_main_event_img03.png" alt="">
                         </div>
                         <div class="text_box">
                             <p>Day 2<br/>Virtual Company Visit</p>
@@ -44,7 +48,8 @@
                 <li data-aos="fade-up" data-aos-delay="600">
                     <a href="event04">
                         <div class="img_box">
-                            <img src="/img/main_event_img04.png" alt="">
+                            <img class="mo_none" src="/img/main_event_img04.png" alt="">
+                            <img class="mo_block" src="/img/m_main_event_img04.png" alt="">
                         </div>
                         <div class="text_box">
                             <p>Day3<br/>Sustainability</p>
@@ -52,9 +57,10 @@
                     </a>
                 </li>
                 <li data-aos="fade-up" data-aos-delay="800">
-                    <a href="#none">
+                    <a href="/event05">
                         <div class="img_box">
-                            <img src="/img/main_event_img05.png" alt="">
+                            <img class="mo_none" src="/img/main_event_img05.png" alt="">
+                            <img class="mo_block" src="/img/m_main_event_img05.png" alt="">
                         </div>
                         <div class="text_box">
                             <p>Speakers</p>
@@ -71,14 +77,16 @@
                 <li data-aos="fade-right">
                     <a href="/archive01">
                         <div class="img_box">
-                            <img src="/img/main_archive_img01.png" alt="">
+                            <img class="mo_none" src="/img/main_archive_img01.png" alt="">
+                            <img class="mo_block" src="/img/m_main_archive_img01.png" alt="">
                         </div>
                     </a>
                 </li>
                 <li data-aos="fade-left">
                     <a href="#none">
                         <div class="img_box">
-                            <img src="/img/main_archive_img02.png" alt="">
+                            <img class="mo_none" src="/img/main_archive_img02.png" alt="">
+                            <img class="mo_block" src="/img/m_main_archive_img02.png" alt="">
                         </div>
                     </a>
                 </li>
@@ -119,7 +127,7 @@
                         <input type="text" name="contact_number" placeholder="Phone" required>
                     </div>
                     <div class="submit_box">
-                        <input type="image" src="/img/submit_btn.png" alt="submit">
+                        <button type="submit">SUBMIT <img src="/img/submit_arrow.png" alt="이미지"></button>
                     </div>
                 </form>
             </div>
